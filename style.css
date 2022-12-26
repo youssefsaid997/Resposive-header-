@@ -1,0 +1,129 @@
+/* *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+} */
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:white;
+    background-color: black;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.header{
+    display: flex;
+    background-color: #333;
+    width: 99%;
+    justify-content: space-between;
+    align-items: center;
+    border: 0 solid;
+    border-radius: 8px;
+
+}
+.header .logo{
+    font-size: 2.5em;
+    justify-self: flex-start;
+    padding: .5rem .7rem;
+}
+
+.header ul.navbar {
+    list-style: none;
+    justify-content: center;
+}
+
+.header ul.navbar li {
+    display: inline-block;
+    padding: 1.2rem 1rem;
+    cursor: pointer;
+}
+.header ul.navbar li:hover{
+    display: inline-block;
+    padding: 1.2rem 1rem;
+    cursor: pointer;
+    background-color: greenyellow;
+}
+
+
+.header .profile{
+    display: flex;
+    justify-content: flex-end;
+    padding: .5rem .7rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.header .profile img{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 0.5px solid #f3f3f3;
+    border-radius: 50% 50%;
+    color: white;
+}
+.header .profile span{
+
+    display: inline-block;
+    font-size: 1.1em;
+    padding: .2rem;
+}
+
+.dropdown ,.dropdownmenu{
+    display: none;
+}
+
+
+
+@media (max-width:768px){
+    .header .profile{
+        display: none;
+    }
+    .header ul.navbar{
+        display: none;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .dropdownmenu{
+        display: block;
+    }
+    .dropdownmenu{
+        font-size: 2.5em;
+        justify-self: flex-end;
+        padding: .5rem .7rem;
+    }
+
+
+    .dropdown{
+        background-color: #333;
+        font-size: 1em;
+        position: absolute;
+        right: 0;
+        top: 55px;
+        list-style: none;
+        
+    }
+
+    .dropdown li{
+        padding: .4rem .7rem;
+        justify-content: flex-end;
+        list-style: none;
+        
+        
+    }
+    .dropdown li:hover{
+        padding: .4rem .7rem;
+        background-color: greenyellow;
+        font-size: 1em;
+        list-style: none;
+    }
+
+}
